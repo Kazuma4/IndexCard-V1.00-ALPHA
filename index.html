@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side -->
+        <div class="left-side">
+            <img src="pictures/image.png" alt="Logo" class="logo">
+            <h1>Student Form</h1>
+            <p>Put and select your correct information.</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-side">
+            <div class="form-container">
+                <!-- First Form -->
+                <div class="form-box" id="form1">
+                    <form id="firstForm">
+                        <!-- StudentID Field -->
+                        <div class="input-group">
+                            <label for="studentid">Student #</label>
+                            <input type="text" id="studentid" name="studentid" required>
+                        </div>
+
+                        <!-- Name Field -->
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <!-- Course Field -->
+                        <div class="input-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">Select your course</option>
+                                <option value="BSIT">BSIT</option>
+                                <option value="BSCS">BSCS</option>
+                                <option value="BSIS">BSIS</option>
+                                <option value="BSA">BSA</option>
+                            </select>
+                        </div>
+
+                        <!-- Next Button -->
+                        <button type="button" id="nextButton">Next</button>
+                    </form>
+                </div>
+
+                <!-- Second Form (Hidden Initially) -->
+                <div class="form-box" id="form2">
+                    <form id="secondForm">
+                        <!-- Email Field -->
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <!-- Section Field -->
+                        <div class="input-group">
+                            <label for="section">Section</label>
+                            <select id="section" name="section" required>
+                                <option value="">Select your course</option>
+                               
+                            </select>
+                        </div>
+
+                        <!-- Radio Buttons for Prelim, Midterm, Finals -->
+                        <div class="input-group">
+                            <label>Select Term:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="term" value="prelim" required> Prelim</label>
+                                <label><input type="radio" name="term" value="midterm"> Midterm</label>
+                                <label><input type="radio" name="term" value="finals"> Finals</label>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="submitButton">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
