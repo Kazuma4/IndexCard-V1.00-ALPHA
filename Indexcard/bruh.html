@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="form-box">
+        <form action="register.php" method="POST">
+            <H1>Register now!</H1>
+            <label for="name">Username</label>
+            <input type="name"id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email"id="email" name="email" required>
+            <label for="studentid">StudentID</label>
+            <input type="studentid"id="studentid" name="studentid" required>
+            <label for="password">Password</label>
+            <input type="password"id="password" name="password" required>
+            
+            <button type="submit">Submit</button>
+            <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+            
+
+        </form>
+    </div>
+    <div class="login-form">
+        <form>
+            <H1>Login Now!</H1>
+            <label for="studentid">StudentID</label>
+            <input type="studentid"id="studentid" name="studentid" required>
+            <label for="password">Password</label>
+            <input type="password"id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+            <p>Don't have an account? <a href="#" onclick="toggleForms()">Register</a></p>
+        </form>
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
